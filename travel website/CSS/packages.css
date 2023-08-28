@@ -1,0 +1,282 @@
+*{
+    margin:0px 0px;
+    text-transform: capitalize;
+}
+html{
+    scroll-behavior: smooth;
+}
+a{
+    text-decoration: none;
+    color:white;
+}
+
+.packages{
+    background-color:lightblue;
+}
+.travel{
+  /* display:flex;
+  justify-content: space-around;
+  flex-wrap: wrap; */
+  display:grid;
+  grid-template-columns:repeat(3, 1fr)
+  
+}
+.countries img{
+    height:200px;
+    width:90%;
+    border-radius:40px;
+    margin:20px 0px;
+}
+.countries{
+    height:auto; width:auto;
+    border:2px solid black;
+    text-align: center;
+    border-radius:30px;
+    /* width:25%; */
+    margin:20px 10px;
+    background-color: gainsboro;
+}
+/* .txt button a{
+    text-decoration: none;
+    color:white;
+} */
+.txt button{
+    padding:5px 10px;
+    border-radius: 20px;
+    margin:5px 0px;
+    background-color: blue;
+    border:none;
+}
+.txt h1{
+    color:black;
+    text-decoration:underline;
+}
+.f-img{
+    height:300px;
+    width:100%;
+}
+.span{
+    color:crimson;
+}
+.fun {
+    display:flex;
+    flex-wrap: wrap;
+    text-align: center;
+    justify-content: space-evenly;
+}
+.fun img{
+    border-radius: 0px;
+}
+.funcard{
+    border:2px solid black;
+    margin:20px 30px;
+}
+.f-txt{
+    padding:15px 10px;
+}
+.f-btn{
+    background-color:blueviolet;
+    color:white;
+    border:none;
+    margin-top:10px;
+}
+.dev{
+    margin:0px auto;
+    text-align: center;
+    display:flex;
+    flex-wrap:wrap;
+    justify-content: space-between;
+    width:100%;
+}
+.d-card{
+    height:auto; width:auto;
+    border:2px solid black;
+    text-align: center;
+    border-radius:30px;
+    width:22%;
+    margin:20px 10px;
+    background-color: gainsboro;
+}
+.d-card:hover{
+    box-shadow: black 5px 5px 5px 4px;
+    border:none;
+    cursor:default;
+}
+.d-card img{
+    height:200px;
+    width:100%;
+    border-top-left-radius: 28px;
+    border-top-right-radius:28px;
+}
+.d-txt{
+    display:flex;
+    justify-content: center;
+    padding:10px 10px;
+}
+.d-txt button{
+    border:none;
+    background-color: blueviolet;
+    border-radius: 20px;
+    margin:0px 10px;
+}
+.d-txt button a:hover{
+    color:white;
+    font-size:20px;
+}
+/*couple cards */
+#coupletrips{
+/* height:80vh; */
+display: flex;
+flex-wrap: wrap;
+justify-content: center;
+align-items: center;
+margin-top: 50px;
+}
+.card {
+margin:10px 20px;
+position: relative;
+width:25%;
+height: 200px;
+border-radius: 10px;
+box-shadow: 0px 5px 20px rgba(0, 0, 0, 0.5);
+transition: 0.3s;
+padding: 30px 50px;
+background: #fff;
+cursor: pointer;
+
+}
+.card:hover {
+height:400px;
+}
+.imgbox {
+position: relative;
+width:120%;
+right:10%;
+height:200px;
+transform: translateY(-100px);
+z-index: 99;
+text-align: center;
+}
+img {
+height:200px;
+width: 100%;
+border-radius: 10px;
+box-shadow: 0px 5px 20px rgba(0, 0, 0, 0.5);
+}
+.imgbox h3{
+color:blue;
+}
+.content {
+padding: 10px 20px;
+text-align: center;
+transform: translateY(-450px);
+opacity: 0;
+transition: 0.3s;
+margin-top:100px;    
+}
+.card:hover > .content {
+opacity: 1;
+transform: translateY(-180px);
+}
+.content h5 {
+color: #1b709a;
+}
+/*budget trips*/
+.budget{
+    display:flex;
+    flex-wrap: wrap;
+    text-align: center;
+    justify-content: space-evenly;
+}
+.b-cards{
+    margin:20px 20px;
+}
+.b-con{
+    margin-top:10px;
+    border-radius: 10px;
+    border:2px solid black;
+    background-color:cornsilk;
+    padding:10px 20px;
+}
+
+
+
+@media screen and (min-width:320px) and (max-width:425px){
+    .tabs a{
+        display:block;
+    }
+    .travel{
+        display:block;
+    }
+    .countries{
+        width:95%;
+    }
+    .dev{
+        display:block;
+    }
+    .d-card{
+        width:95%;
+    }
+    .card {
+       display:grid;
+       grid-template-columns: 1, 1fr;
+       width:auto;
+       margin-top:20vh;
+    }
+}
+
+
+@media screen and (min-width:425px) and (max-width:600px){
+    .tabs {
+        display:flex;
+        flex-wrap: wrap;
+
+    }
+    .travel{
+        display:grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .dev{
+        display:grid;
+        grid-template-columns: repeat(2,1fr);
+    }
+    .d-card{
+        width:auto;
+    }
+    .card {
+        display:grid;
+        grid-template-columns: 1, 1fr;
+        width:auto;
+        margin-top:20vh;
+     }
+}
+
+
+
+@media screen and (min-width:601px) and (max-width:768px){
+    .dev{
+        display:grid;
+        grid-template-columns: repeat(3,1fr);
+    }
+    .d-card{
+        width:auto;
+    }
+    #coupletrips{
+        /* display:grid;
+        grid-template-columns: repeat(2, 1fr); */
+        display:flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+    }
+    .card {
+        margin-top:80px;
+        width:40%;
+        }
+        .card:hover {
+        height:400px;
+        }
+        .content, button{
+            font-size: 10px;
+        }
+        
+}

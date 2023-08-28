@@ -1,0 +1,235 @@
+.container1 {
+    display:flex;
+    background-color:rgb(222, 211, 211);
+    grid-template-columns: 4;
+}
+ logo img {
+    width:25%;
+    margin-top:3%;
+    margin-top: 8%;
+}
+.add {
+    width:20%;
+    margin-left:9%;
+}
+.mail {
+    margin-left: 11%;
+}
+.mail p {
+    font-size: large;
+}
+.call {
+    margin-left: 13%;
+}
+/* .container1 {
+    display:flex;
+    height:30%;
+    width:100%;
+    background-color: grey;
+    flex-wrap: wrap;
+    grid-template-columns:4;
+}
+.logo img {
+
+}
+.text {
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    margin-left:100px;
+}
+.text i{
+    margin-right:20px;
+    color:orangered;
+    font-size:x-large;
+} */
+.container2 {
+    height:100px;
+    background-color:white;
+    /* border:1px solid black; */
+
+}
+.sub select {
+        color:orangered;
+        margin-left:3%;
+        background-color:rgb(222, 211, 211);
+        height:38px;
+        width:8%;
+        /* margin-top:-2px; */
+        float:left;
+}
+.li ul li {
+    float:left;
+    width:10%;
+    margin-left:4%;
+}
+.li li select{
+    width:12%;
+}
+.button {
+    /* margin-left: 47%; */
+    width: 136px;
+}
+.about img {
+    height: 350px;
+    width: 100%;
+    margin-top:10px;
+}
+/* .pos h1 {
+    position: relative;
+    left: 100px;
+} */
+.container3 {
+    display:flex;
+}
+.abt img{
+    margin-top: 21%;
+    margin-left: 128px;
+    /* height: 64px; */
+    border-radius: 32px;
+    height: 400px;
+}
+.about-text h2 {
+    margin-top:25%;
+    margin-left:5%;
+    color: orangered;
+}
+.about-text h1 {
+    margin-left:5%;
+}
+.about-text p {
+    width: 65%;
+    margin-left: 5%;
+    text-transform: capitalize;
+    font-size:20px;
+    font-style:oblique;
+}
+.about-text button{
+    margin-left:5%;
+}
+.container4 {
+    margin-top:6%;
+    height:400%;
+    background-image: url('../asserts/images/registration.jpg');
+    display:flex;
+    
+}
+.offers{
+  color:white;
+  text-transform: capitalize;
+  margin-left:7%;
+  width:45%;
+  /* display:flex; */
+  /* position:relative;
+  margin-top:3%; */
+}
+.offers h2 {
+    color:orangered;
+}
+/* .form {
+    width: 19%;
+    height: 54%;
+    background-color: orangered;
+    margin-top: 50px;
+    margin-left: 12%;
+}
+.form h2{
+    font-size: 35px;
+    height: 43px;
+    width: 100%;
+    background-color: white;
+}
+.form form input {
+width:77%;
+} */
+
+.container5 {
+    text-transform: capitalize;
+    justify-content: center;
+    text-align: center;
+    margin-top:5%;
+}
+.container5 h2 {
+   color:orangered;
+}
+.container5 p {
+    text-align: center;
+    font-size:23px;
+    width:60%;
+    margin-left:20%;
+}
+.container5 img {
+    border-radius: 60%;
+}
+.container5 i {
+    color:orangered;
+    font-size:30px;
+}
+#prof {
+    font-size:20px;
+}
+.footer {
+    height:450px;
+    width:100%;
+    background-color: rgb(3, 3, 41);
+    display:flex;
+}
+.footer h3 {
+    color:orangered;
+}
+.footer ul li {
+    color:white;
+    width:60%;
+}
+.foot {
+    margin-top: 17%;
+}
+.oc h3 {
+    color:orangered;
+    margin-top:5px;
+}
+.oc {
+    margin-top: 10%;
+    margin-left: 8%;
+    width:100%
+}
+.oc ul li {
+    font-size:20px;
+}
+.nl p{
+    color:white;
+}
+.nl {
+    margin-right: 7%;
+    margin-top: 4%;
+    width: 100%;
+}
+.nl input {
+    width:80%;
+    height:30px;
+}
+.nl button{
+    height:39px;
+}
+.finalpart {
+    border-top:1%;
+    display:flex;
+    background-color: rgb(3, 3, 41);
+}
+.finalpart ul li{
+    float:left;
+    color:white;
+    width:25%;
+}
+.finalpart ul {
+    width: 36%;
+}
+.finalpart p {
+    color:white;
+    width:60%;
+    float:left;
+    margin-left: 38px;
+}
+.finalpart h3{
+    color:orangered;
+}

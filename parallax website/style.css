@@ -1,0 +1,61 @@
+* {
+margin:0px 0px;
+padding:0px 0px;
+}
+body {
+    min-height:100vh;
+    overflow-x: hidden;
+}
+header {
+   top:0px;
+   left:0px;
+   width:100%;
+   padding:10px 100px;
+   display:flex;
+   justify-content: flex-start;
+   align-items:center;
+   position: absolute;
+
+}
+nav a{
+    padding:10px 20px;
+    text-decoration: none;
+    color:lightseagreen;
+    font-size: 25px;
+}
+nav a:hover{
+    transition: 1s smooth;
+    background-color: black;
+    border-radius: 40px 40px; 
+}
+.parallax{
+height:90vh;
+display:flex;
+top:0px;
+justify-content: center;
+align-items:center;
+position: relative;
+}
+#txt{
+    position: absolute;
+    font-size:55px;
+}
+.parallax img{
+    position:absolute;
+    top:0px;
+    left:0px;
+    width:100%;
+    pointer-events: none;
+}
+#content{
+    text-transform: capitalize;
+    position:relative;
+    top:22vh;
+    padding:40px;
+    background-color:#003329;
+    color:beige;
+}
+#content h2{
+   margin-left:83vh;
+   padding:10px 0px;
+}

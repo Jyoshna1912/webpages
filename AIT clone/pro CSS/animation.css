@@ -1,0 +1,10 @@
+
+    h1 {
+        text-align:center;
+    } 
+    div {
+        height:300px;
+        width:auto;
+        background-color: blue;
+        color:blueviolet;
+    }

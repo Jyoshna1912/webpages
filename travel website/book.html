@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    *{
+        text-transform: capitalize;
+        padding:0px 0px;
+    }
+    body{
+        background-image: linear-gradient(pink, blue);
+        background-repeat: no-repeat;
+    }
+    form{
+        width:90%;
+        margin:0px auto;
+    }
+    #form-div{
+        display:flex;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+        font-size:25px;
+        padding:30px 10px;
+    }
+    form input{
+        font-size:25px;
+        border: 3px solid black;
+    }
+    #buttons input{
+        font-size:25px;
+        background-color: lightblue;
+        border-radius: 30px;
+        padding:5px 10px;
+        text-align: center;
+        margin:5px 15px;
+        border:none;
+        cursor: pointer;
+    }
+    #buttons input:hover{
+        background-color:blueviolet;
+        color:white;
+    }
+
+/* plane styles*/
+#plane{
+    position:absolute;
+    height:100px;
+    animation-name: flight;
+    animation: flight 5s 1s infinite normal forwards ease-in-out;
+}
+ 
+@keyframes flight{
+    0%{
+        bottom:10%;
+    }
+    20%{
+        margin-left:0%;
+        bottom:10%;
+    }
+    40%{
+        margin-left:20%;
+        bottom:15%;
+    }
+    60%{
+        margin-left:40%;
+        bottom:20%;
+    }
+    100%{
+        margin-left:60%;
+        bottom: 25%;
+    }
+
+}
+    /*media queries */
+    @media screen and (min-width:200px) and (max-width:400px){
+        form input{
+        font-size:20px;
+    }
+    #plane{
+        display:none;
+    }
+    }
+@media screen and (min-width:400px) and (max-width:650px){
+    #plane{
+        height:70px;
+    }
+    @keyframes flight{
+    0%{
+        top:0px;
+        margin-left:0px;
+    }
+    50%{
+        margin-left:30%;
+        top:30px;
+    }
+    80%{
+        margin-left:40%;
+        top:50px;
+    }
+    100%{
+        margin-left:58%;
+        top:70px;
+    }
+    }
+}
+    
+/* popup box styles */
+#popupbox{
+        margin-left:25%; 
+        margin-top:5%;
+        height:auto; width:55%;
+        background-color: #ccc;
+        color:black;
+    }
+    #upperdiv{
+        display:flex; 
+        border:2px solid black; 
+        justify-content:space-around;
+    }
+    .logos img{
+        padding:15px 5px;
+        height:35px;
+        width: fit-content;
+    }
+    .logos{
+        display:flex;
+    }
+
+    #second-box{
+        padding:10px 15px;
+        border: 2px solid black;
+         font-size:28px;
+    }
+    #second-box input{
+        width:98%;
+        height:30px;
+    }
+    #inner-box{
+        display:flex; 
+        justify-content: space-around;
+    }
+    #inner-box div{
+        width:48%;
+    }
+    #paybtn{
+         font-size: 25px;
+        width:95%;
+        padding:5px 5px;
+        background-color: rgb(37, 193, 37);
+        border:none;
+        border-radius:10px;
+        color:beige;
+        cursor: pointer;
+    }
+
+    @media screen and (min-width:320px) and (max-width:600px) {
+        #popupbox{
+            width:100%;
+            overflow: hidden;
+            margin-left:0%; 
+            margin-top:5%;
+        }
+        #upperdiv{
+            display: block;
+        }
+       
+    }
+    @media screen and (min-width:601px) and (max-width:1034px) {
+        #upperdiv{
+            display:block;
+        }
+
+    }
+
+</style>
+
+
+<body>
+    <h1 style="text-align: center; text-decoration: underline;"> Book your trip now!</h1> <br> <br>
+    <form id="myForm" >
+ <div id="form-div">      
+     <div >
+         <label> Full name</label><br>
+         <input type="text" placeholder="enter name" id="name" /><br><br>
+         <label> email id</label><br>
+         <input type="mail" placeholder="enter name" id="email"/><br><br>
+         <label>Arrival/pickup point</label><br>
+         <input type="text" placeholder="enter location" required/><br><br>
+         <label> Arrival date</label><br>
+         <input type="date" id="Adate" required/><br><br>
+     </div> 
+     <div>
+         <label> Phone number</label><br>
+         <input type="number" placeholder="630xxxxxxx" id="mobile"/><br><br>
+         <label> No. of people </label><br>
+         <input type="number" placeholder="00" id="ppl"/><br><br>
+         <label>Destination</label><br>
+         <input type="text" placeholder="enter location" required/><br><br>
+         <label> leaving date</label><br>
+         <input type="date" id="date" required><br> 
+     </div>
+</div>     
+    <div style="text-align:center; padding:10px 0px;" id="buttons">
+        <input type="reset" value="clear" >
+        <input type="submit" value="Proceed">
+    </div>
+
+    <img src="./images/flight2.png" alt="" id="plane"/>
+    </form>
+
+<!--popup starts-->
+     <div id="popupbox" style="display: none;">
+        <DIV id="upperdiv">
+        <h2>CREDIT/DEBIT CARD PAYMENT</h2>
+        <div class="logos">
+            <img src="./images/visa_logo.png" alt=""/>
+            <img src="./images/masterCard.png" alt=""/>
+            <img src="./images/am ex logo.png" alt=""/>
+            <h3 style="margin-top:5px; margin-left:10px; border:2px solid black; height:20px; cursor: pointer; width:15px; position:relative; top:10px"> X</h3>
+        </div>
+        </DIV>
+        <div id="second-box">
+            <label> Card number</label> <br>
+            <input type="number" value="" id="c-no" />
+        <div id="inner-box">
+            <div>
+                <label>card expiry</label> <br>
+                <input type="number" value="" id="c-exp"/>
+            </div>
+            <div>
+                <label>card cvc</label> <br>
+                <input type="number" value="" id="c-cvc"/>
+            </div>
+        </div>        
+            <label> Card holder name</label> <br>
+            <input type="text" value=""/>
+            <br> <br> 
+            <div style="text-align: center;"> 
+                <button id="paybtn"> make payment</button>
+            </div>
+        </div>       
+    </div>
+    <script>
+ document.getElementById('myForm').addEventListener('submit', function (event) {
+      event.preventDefault();
+
+      const nameRegex = /^[A-Za-z]{3,10}$/;
+      const emailRegex = /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/;
+      const mobileRegex = /^[689]\d{9}$/;
+
+      const nameInput = document.getElementById('name');
+      const emailInput = document.getElementById('email');
+      const mobileInput = document.getElementById('mobile');
+      const dateInput = document.getElementById('date');
+
+
+      const nameIsValid = nameRegex.test(nameInput.value);
+      const emailIsValid = emailRegex.test(emailInput.value);
+      const mobileIsValid = mobileRegex.test(mobileInput.value);
+
+      const currentDate = new Date();
+      const selectedDate = new Date(dateInput.value);
+      
+
+      if (!nameIsValid || !emailIsValid || !mobileIsValid || selectedDate < currentDate) {
+        highlightInvalidInputs(nameIsValid, emailIsValid, mobileIsValid, selectedDate > currentDate);
+      } else {
+        // Proceed with displaying the new container
+        // Your code to display the new container here     
+ 
+        const successContainer = document.getElementById('popupbox');
+        successContainer.style.display = 'block';
+        const successForm= document.getElementById('myForm');
+        successForm.style.display='none';
+      }
+    });
+
+    function highlightInvalidInputs(isNameValid, isEmailValid, isMobileValid, isDateValid) {
+      const nameInput = document.getElementById('name');
+      const emailInput = document.getElementById('email');
+      const mobileInput = document.getElementById('mobile');
+      const dateInput = document.getElementById('date');
+    
+      if (!isNameValid) {
+        nameInput.style.borderColor = 'red';
+      } else {
+        nameInput.style.borderColor = 'green';
+      }
+
+      if (!isEmailValid) {
+        emailInput.style.borderColor = 'red';
+      } else {
+        emailInput.style.borderColor = 'green';
+      }
+
+      if (!isMobileValid) {
+        mobileInput.style.borderColor = 'red';
+      } else {
+        mobileInput.style.borderColor = 'green';
+      }
+
+      if (!isDateValid) {
+        dateInput.style.borderColor = 'red';
+      } else {
+        dateInput.style.borderColor = 'green';
+      }
+    }
+
+    
+
+function clean(){
+    var inputs= document.querySelectorAll('input');
+    inputs.length==0;
+}
+      
+</script>
+
+</body>
+</html>
